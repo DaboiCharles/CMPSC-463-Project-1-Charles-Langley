@@ -56,7 +56,7 @@ arr3 = [1,5,2,8,-1,8,7,-66]
 arr4 = [21,12]
 arr5 = [2,4,0,1,3,44,7,88,-1,-44]
 arr6 = [3,1,9,-2,-4,33,-21]
-arr7 = [4,7,-1,-3,8,99,-99,11,1,0-]
+arr7 = [4,7,-1,-3,8,99,-99,11,1,0]
 
 print("First array")
 print(arr)
@@ -99,7 +99,35 @@ print(arr6)
 arr6 = bubble_merge(arr6)
 print(arr6)
 
+# TEST 1
+print()
+print("Test 1")
 start1 = time.time_ns()
 bubble_merge(arr7)
 end1 = time.time_ns()
 print("The run time of the bubble_merge: " + str(end1-start1))
+print()
+
+#TEST 2
+print("Test 2")
+start2 = time.time_ns()
+bubble_merge(arr6)
+end2 = time.time_ns()
+print("The run time of the bubble_merge: " + str(end2-start2))
+
+#TEST 3
+print()
+print("Test 3")
+start3 = time.time_ns()
+bubble_merge(arr5)
+end3 = time.time_ns()
+print("The run time of the bubble_merge: " + str(end3-start3))
+
+#TEST 4
+print()
+print("Test 4")
+start4 = time.time_ns()
+bubble_merge(arr4)
+end4 = time.time_ns()
+print("The run time of the bubble_merge: " + str(end4-start4))
+
