@@ -1,6 +1,3 @@
-# CMPSC-463-Project-1-Charles-Langley
-This is my project 1 for CMPSC 463. It incorporates merge sort and bubble sort into one.
-
 CMPSC 463 Project 1 
 Charles Langley
 
@@ -8,7 +5,7 @@ Research and Study
 
  Students will start by studying various sorting algorithms.
 
-https://www.tutorialspoint.com/python_data_structure/python_sorting_algorithms.htm   
+https://www.tutorialspoint.com/python_data_structure/python_sorting_algorithms.htm 
 In this site it talked about all the different sorting algorithms like merge sort and bubble sort. I thinking about choosing insertion sort and merge sort to see how they fair together.
 
 https://realpython.com/sorting-algorithms-python/  
@@ -142,11 +139,49 @@ Testing and Benchmarking
 
 I’m going to compare my sorting algorithm with the others by using the time module. I'll make a table showing my results. 
 
+Sorting Algorithm time complexities in nanoseconds
+
+Testing
+Bubble Merge
+Merge 
+Quick
+Insertion
+Bubble
+Test 1
+9,503 ns
+47,163 ns
+30,674 ns
+7,843 ns
+ 8,076ns
+Test 2
+10,729 ns
+25,003 ns
+13,923 ns
+6,670 ns
+4,317 ns
+Test 3
+9,433 ns
+34,494 ns
+20,016 ns
+4,363 ns
+4,193 ns
+Test 4
+9,079 ns
+35,410 ns
+9,296 ns
+7,237 ns
+6,391 ns
+Average
+9,686 ns
+35,517.5 ns
+18,477.25 ns
+6,528.25 ns
+5,744.25 ns
 
 
-Students will conduct rigorous testing to validate the correctness of their algorithms for given test inputs. They will also perform benchmarking experiments to compare the performance of chosen algorithms with underlying component sorting algorithms.
+
 
 Performance Analysis
 
-Through experimental results, students will analyze and compare the performance of their sorting algorithms in terms of execution time and memory usage.
+When looking at the results it seems that Bubble Sort performed the best based on the tests that I gave it. What I found interesting was when looking at the results my bubble merge did better than the base merge sort. This makes sense because my bubble merge sorts as it's getting divided and it does divide all the way to the base case. I believe quick sort didn’t perform as well as it should have due to its pivot selection. Lastly, Insertion did the second best but again I believe it is due to the tests that I gave it. I didn’t make the arrays extremely long so I can imagine the longer the array the worst insertion sort will perform since it has to go one by one. My bubble merge isn’t the most efficient algorithm but it didn’t perform the worst which is a good step. A way my bubble merge could be improved is possibly by adding another division of the array. This way it’ll have an easier time using the bubble sort on a smaller array
 
