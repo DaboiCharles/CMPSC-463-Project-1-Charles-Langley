@@ -161,21 +161,33 @@ def mergeSort(arr, l, r):
         mergeSort(arr, m+1, r)
         merge(arr, l, m, r)
  
-
-arr7 = [4,7,-1,-3,8,99,-99,11,1,0]
-n = len(arr7)
  
-mergeSort(arr7, 0, n-1)
+# Driver code to test above
+arr = [12, 11, 13, 5, 6, 1, 600, -5, 22, 0 ]
+arr1 = [9,8,7,6,5,4,3,2,1]
+arr2 = [4,876,12,-4,12,7,421,-65]
+arr3 = [1,5,2,8,-1,8,7,-66]
+arr4 = [21,12]
+arr5 = [2,4,0,1,3,44,7,88,-1,-44]
+arr6 = [3,1,9,-2,-4,33,-21]
+arr7 = [4,7,-1,-3,8,99,-99,11,1,0]
 
-# Test section for each sorting algorithm for time benchmark 
+n7 = len(arr7)
+n6 = len(arr6)
+n5 = len(arr5)
+n4 = len(arr4)
 
+
+
+# TEST 1
+print("Test 1")
 start1 = time.time_ns()
-mergeSort(arr7, 0, n-1)
+mergeSort(arr7, 0, n7-1)
 end1 = time.time_ns()
 print("The run time of the Merge sort is: " + str(end1-start1))
 
 start2 = time.time_ns()
-quickSort(arr7, 0, n-1)
+quickSort(arr7, 0, n7-1)
 end2 = time.time_ns()
 print("The run time of the Quick sort is: " + str(end2-start2))
 
@@ -188,3 +200,69 @@ start4 = time.time_ns()
 bubbleSort(arr7)
 end4 = time.time_ns()
 print("The run time of the Bubble sort  is: " + str(end4-start4))
+print()
+#TEST 2
+print("Test 2")
+start5 = time.time_ns()
+mergeSort(arr6, 0, n6-1)
+end5 = time.time_ns()
+print("The run time of the Merge sort is: " + str(end5-start5))
+
+start6 = time.time_ns()
+quickSort(arr6, 0, n6-1)
+end6 = time.time_ns()
+print("The run time of the Quick sort is: " + str(end6-start6))
+
+start7 = time.time_ns()
+insertionSort(arr6)
+end7 = time.time_ns()
+print("The run time of the Insertion sort  is: " + str(end7-start7))
+
+start8 = time.time_ns()
+bubbleSort(arr6)
+end8 = time.time_ns()
+print("The run time of the Bubble sort  is: " + str(end8-start8))
+print()
+#TEST 3
+print("Test 3")
+start9 = time.time_ns()
+mergeSort(arr5, 0, n5-1)
+end9 = time.time_ns()
+print("The run time of the Merge sort is: " + str(end9-start9))
+
+start10 = time.time_ns()
+quickSort(arr5, 0, n5-1)
+end10 = time.time_ns()
+print("The run time of the Quick sort is: " + str(end10-start10))
+
+start11 = time.time_ns()
+insertionSort(arr5)
+end11 = time.time_ns()
+print("The run time of the Insertion sort  is: " + str(end11-start11))
+
+start12 = time.time_ns()
+bubbleSort(arr5)
+end12 = time.time_ns()
+print("The run time of the Bubble sort  is: " + str(end12-start12))
+print()
+#TEST 4
+print("Test 4")
+start13 = time.time_ns()
+mergeSort(arr4, 0, n4-1)
+end13 = time.time_ns()
+print("The run time of the Merge sort is: " + str(end13-start13))
+
+start14 = time.time_ns()
+quickSort(arr4, 0, n4-1)
+end14 = time.time_ns()
+print("The run time of the Quick sort is: " + str(end14-start14))
+
+start15 = time.time_ns()
+insertionSort(arr4)
+end15 = time.time_ns()
+print("The run time of the Insertion sort  is: " + str(end15-start15))
+
+start16 = time.time_ns()
+bubbleSort(arr4)
+end16= time.time_ns()
+print("The run time of the Bubble sort  is: " + str(end16-start16))
