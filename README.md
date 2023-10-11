@@ -135,49 +135,7 @@ print("The run time of the bubble_merge: " + str(end1-start1))
 
 
 
-Testing and Benchmarking
-
-I’m going to compare my sorting algorithm with the others by using the time module. I'll make a table showing my results. 
-
-Sorting Algorithm time complexities in nanoseconds
-
-Testing
-Bubble Merge
-Merge 
-Quick
-Insertion
-Bubble
-Test 1
-9,503 ns
-47,163 ns
-30,674 ns
-7,843 ns
- 8,076ns
-Test 2
-10,729 ns
-25,003 ns
-13,923 ns
-6,670 ns
-4,317 ns
-Test 3
-9,433 ns
-34,494 ns
-20,016 ns
-4,363 ns
-4,193 ns
-Test 4
-9,079 ns
-35,410 ns
-9,296 ns
-7,237 ns
-6,391 ns
-Average
-9,686 ns
-35,517.5 ns
-18,477.25 ns
-6,528.25 ns
-5,744.25 ns
-
+<img width="717" alt="Screenshot 2023-10-11 at 4 16 13 PM" src="https://github.com/DaboiCharles/CMPSC-463-Project-1-Charles-Langley/assets/79470963/eec2df2a-3092-4c30-b20f-86af3f17b79d">
 
 
 
